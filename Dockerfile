@@ -1,5 +1,5 @@
 # pull official base image
-FROM node:13.12.0-alpine
+FROM node:12-alpine
 
 # set working directory
 WORKDIR /app
@@ -13,4 +13,4 @@ RUN npm install
 COPY . ./
 
 # start app
-CMD ["npm", "start"]  
+CMD ["npm", "start"]
