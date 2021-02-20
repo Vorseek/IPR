@@ -1,23 +1,33 @@
 {
   "compilerOptions": {
     "target": "es5",
+    "module": "esnext",
     "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
+    "project": "tsconfig.json",
+    "downlevelIteration": true,
+    "removeComments": false,
+    "allowJs": false,
+    "checkJs": false,
     "skipLibCheck": true,
     "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "outDir": "./build",
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
     "baseUrl": "src",
-    "typeRoots": ["node_modules/@types"]
+    "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"],
-  "exclude": ["node_modules"]
+  "typedocOptions": {
+    "mode": "modules",
+    "out": "docs"
+  },
+  "include": [".", "./src", "./src/network"],
+  "exclude": ["./node_modules", "./build", "./__tests__"]
 }

@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
-import App from './container/App';
 import { BrowserRouter as Router } from 'react-router-dom';
+import App from 'container/App';
 
 ReactDOM.render(
   <Router>
