@@ -28,7 +28,8 @@
     "eject": "react-scripts eject",
     "docker-build": "docker build -t vorseek/alpine:dev .",
     "docker-run": "docker run --rm -it --name vorseek -v ${PWD}:/app -v /app/node_modules -p 3001:3000 -e CHOKIDAR_USEPOLLING=true vorseek/alpine:dev",
-    "docker-stop": "docker stop vorseek"
+    "docker-stop": "docker stop vorseek",
+    "lint": "tsc --noEmit && eslint src/**/*.ts{,x}"
   },
   "browserslist": {
     "production": [
