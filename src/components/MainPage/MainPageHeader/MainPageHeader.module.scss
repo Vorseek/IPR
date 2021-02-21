@@ -1,0 +1,87 @@
+@import '../../../assets/scss/vars';
+.main-header {
+  background-image: url('../../../assets/image/0-header.jpg');
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  align-content: center;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: $dark;
+    opacity: 0.92;
+  }
+}
+
+.header-content {
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+  padding: 60px $gutter;
+  h1 {
+    font-size: 60px;
+    font-family: intro-grid, sans-serif;
+    font-weight: normal;
+    margin: 20px 0;
+    line-height: 1.5;
+  }
+  .button {
+    margin: 10px;
+  }
+}
+
+.button {
+  display: inline-block;
+  border: none;
+  color: #fff;
+  text-decoration: none;
+  background-color: $accent;
+  padding: 15px 60px;
+  font-size: 20px;
+  font-weight: 800;
+  border-radius: 2px;
+  text-align: center;
+  position: relative;
+  outline: none;
+  transition: background-color 0.1s ease;
+  cursor: pointer;
+
+  &:focus,
+  &:hover {
+    text-decoration: none;
+    color: #fff;
+  }
+  &:hover {
+    background-color: lighten($accent, 5%);
+    &::after {
+      opacity: 0.22;
+    }
+  }
+  &:active {
+    background-color: darken($accent, 5%);
+    &::after {
+      opacity: 0.32;
+    }
+  }
+
+  &.button-grey {
+    background-color: $grey;
+    &:hover {
+      background-color: lighten($grey, 5%);
+      &::after {
+        opacity: 0.22;
+      }
+    }
+    &:active {
+      background-color: darken($grey, 5%);
+      &::after {
+        opacity: 0.32;
+      }
+    }
+  }
+}
