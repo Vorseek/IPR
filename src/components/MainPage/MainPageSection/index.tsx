@@ -14,6 +14,11 @@ const MainPageSection = () => {
           <span>{e.title}</span>
         </div>
       ))}
+      <div className="buttoncase text-center">
+        <button className="button" type="button">
+          View Portfolio
+        </button>
+      </div>
     </section>
   );
 };

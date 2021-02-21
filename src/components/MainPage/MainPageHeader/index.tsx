@@ -7,10 +7,10 @@ const MainPageHeader = () => {
       <div className={`${styles['header-content']} grid`}>
         <h1>We are creators</h1>
         <div className={`${styles['header-button']}`}>
-          <button className={`${styles.button}`} type="button">
+          <button className={`${styles.button} button`} type="button">
             Follow
           </button>
-          <button className={`${styles.button} ${styles['button-grey']}`} type="button">
+          <button className="button button-grey" type="button">
             Go home
           </button>
         </div>

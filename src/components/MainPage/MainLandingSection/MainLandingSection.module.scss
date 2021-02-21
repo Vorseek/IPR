@@ -1,0 +1,20 @@
+@import 'assets/scss/vars';
+
+.section-ready {
+    background-color: $light;
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.ready-left {
+  border-right: 1px solid #dadada;
+  font-size: 18px;
+  padding: 60px 60px 60px 0;
+  h2 {
+      margin-top: 0;
+      margin-bottom: 40px;
+  }
+}
+.ready-right {
+    padding-left: 40px;
+}
