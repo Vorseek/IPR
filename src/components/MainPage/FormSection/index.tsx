@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './FormSection.module.scss';
 
-const FormSection = () => {
+const FormSection = ({ isReady = true }) => {
   return (
     <section className={`${styles.form_section}`}>
       <div className="container">
@@ -22,9 +22,11 @@ const FormSection = () => {
             <input className={styles.input} type="text" name="name" placeholder="youName" />
           </div>
           <div>
-            <button className={`${styles['form-button']} button`} type="submit">
-              Yes Ready
-            </button>
+            {isReady && (
+              <button className={`${styles['form-button']} button`} type="submit">
+                Yes Ready
+              </button>
+            )}
           </div>
         </form>
       </div>

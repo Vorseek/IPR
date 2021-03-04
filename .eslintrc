@@ -36,6 +36,10 @@
     "react/jsx-closing-bracket-location": 0,
     "@typescript-eslint/explicit-module-boundary-types": 0,
     "prettier/prettier": ["warn"],
+    "react/prop-types": 0,
+    "@typescript-eslint/ban-ts-comment": 0,
+    "import/no-extraneous-dependencies": 0,
+    "react/jsx-props-no-spreading": 0,
     "import/extensions": 1
   }
 }
