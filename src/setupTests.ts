@@ -14,7 +14,3 @@ global.shallow = shallow;
 global.render = render;
 // @ts-ignore
 global.mount = mount;
-
-console.error = (message: any) => {
-  throw new Error(message);
-};

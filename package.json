@@ -23,7 +23,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --coverage",
+    "test": "react-scripts test --watchAll --coverage",
     "eject": "react-scripts eject",
     "docker-build": "docker build -t vorseek/alpine:dev .",
     "docker-run": "docker run --rm -it --name vorseek -v ${PWD}:/app -v /app/node_modules -p 3001:3000 -e CHOKIDAR_USEPOLLING=true vorseek/alpine:dev",
