@@ -56,6 +56,10 @@
       }
     }
   }
+
+  @media only screen and (max-width: 992px) {
+    font-size: 18px;
+  }
 }
 .text-center {
   text-align: center;
@@ -63,6 +67,15 @@
 .buttoncase {
   grid-column: 1 / 5;
   padding: $gutter $gutter 50px;
+  @media only screen and (max-width: 1200px) {
+    grid-column: 1 / 4;
+  }
+  @media only screen and (max-width: 992px) {
+    grid-column: 1 / 4;
+  }
+  @media only screen and (max-width: 480px) {
+    grid-column: 1 / 2;
+  }
 }
 
 .container {
@@ -77,6 +90,14 @@
     font-weight: 800;
     color: $dark;
     line-height: 1.2;
+  }
+  @media only screen and (max-width: 768px) {
+    padding: 50px 0;
+    h2 {
+      text-align: center;
+      font-size: 26px;
+      margin-bottom: 26px;
+    }
   }
 }
 

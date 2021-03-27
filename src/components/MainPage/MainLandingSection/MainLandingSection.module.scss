@@ -1,9 +1,17 @@
 @import 'assets/scss/vars';
 
 .section-ready {
-    background-color: $light;
+  background-color: $light;
   .container {
     grid-template-columns: repeat(2, 1fr);
+  }
+  @media only screen and (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr;
+      > div {
+        padding: 0 8%;
+      }
+    }
   }
 }
 .ready-left {
@@ -11,10 +19,13 @@
   font-size: 18px;
   padding: 60px 60px 60px 0;
   h2 {
-      margin-top: 0;
-      margin-bottom: 40px;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+  @media only screen and (max-width: 768px) {
+    border: none;
   }
 }
 .ready-right {
-    padding-left: 40px;
+  padding-left: 40px;
 }
